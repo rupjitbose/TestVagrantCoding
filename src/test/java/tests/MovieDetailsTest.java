@@ -55,10 +55,13 @@ public class MovieDetailsTest extends Base{
 	
 	@DataProvider
 	public Object[] getdata() {
-		List<String> data=new ArrayList<String>();
-		data.add("Pushpa: The Rise - Part 1");
+		
+		String movie="Pushpa: The Rise - Part 1";
 		//K.G.F: Chapter 1
 		//Pushpa: The Rise - Part 1
+		List<String> data=new ArrayList<String>();
+		data.add(movie);
+		
 		
 		return new Object[] {data.get(0)};
 		
