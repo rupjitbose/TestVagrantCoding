@@ -27,6 +27,10 @@ Listener.java --> Contains testng listeners.
 src/test/java/tests:
 MovieDetailsTest.java --> contains the testcases for movie details checking 1.movieReleaseDateCheck 2.movieCountryCheck.
 
+run using testNG from IDE:
+1.Open project in IDE
+2.Find the "testng.xml" right click and run as testNG Suite
+
 
 
 
