@@ -1,5 +1,6 @@
 package pages;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,9 +34,12 @@ public class WikiPage extends Reuse{
 	
 	
 
-	public void goToWiki() {
-		driver.get("https://en.wikipedia.org/");
+	public void goToWiki() throws IOException {
+		//driver.get("https://en.wikipedia.org/");
+		driver.get(wikiUrl());
 	}
+	
+	
 public void wikiSearchMovie(String movie) {
 		wikiSearchBox.sendKeys(movie);
 		wikiSearchButton.click();

@@ -1,5 +1,6 @@
 package pages;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -35,8 +36,9 @@ public class ImdbPage extends Reuse{
 	@FindBy(xpath="//span[text()='Country of origin']/following-sibling::div//a")
 	WebElement imdbCountry;
 	
-	public void goToImdb() {
-		driver.get("https://www.imdb.com/");	
+	public void goToImdb() throws IOException {
+		//driver.get("https://www.imdb.com/");
+		driver.get(imdbUrl());
 	}
 	
 	

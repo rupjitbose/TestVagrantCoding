@@ -1,6 +1,11 @@
 package reusable;
 
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,6 +21,24 @@ public class Reuse {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	public String wikiUrl() throws IOException {
+		Properties p=new Properties();
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\common\\data.properties");
+		p.load(fis);
+		return p.getProperty("wikiurl");
+	}
+	
+	public String imdbUrl() throws IOException {
+		Properties p=new Properties();
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\common\\data.properties");
+		p.load(fis);
+		return p.getProperty("imdburl");
+		}
+		
+	
+	
+	
 	
 	public void waitForWebElementVisible(WebElement element) {
 		WebDriverWait wait=new WebDriverWait(driver,5);

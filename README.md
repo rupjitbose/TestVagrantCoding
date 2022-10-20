@@ -7,4 +7,26 @@ Once maven setup is done do the following steps to run the tests:
 4.Enter command :  mvn compile
 5.Enter command :  mvn test -PMovie
 This will trigger the tests and once tests are completed a report will be generated in "reports" folder within your project. 
+The suite is designed in such a way if there is any unexpected failure of any testcase that testcase will run one additional time to make sure that the failure or the issue was a temporary issue or it is a proper failure. In case of testcase failure a screenshot will be attached to the generated report 
+
+Project Folder Structure:
+src/main/java/common:
+1.ExtentReport.java --> This used to create the the ExtentReport reports.
+2.Retry.java -->  This used to rerun the testcase in case of a failure.
+3.data.properties --> If the project is ran from IDE we can change the browser value in this file to run the test in different browser eg. chrome/edge/firefox.
+wikiurl to contain wikipedia url.
+imdburl to contail imdb url.
+
+src/main/java/pages:
+Here we have the page objects along with web element locators used in different java classes one for imdb and one for wikipedia.
+
+src/test/java/base:
+Base.java --> We have the Base class here which has the functions like triggering of driver and closing the driver.
+Listener.java --> Contains testng listeners.
+
+src/test/java/tests:
+MovieDetailsTest.java --> contains the testcases for movie details checking 1.movieReleaseDateCheck 2.movieCountryCheck.
+
+
+
 
