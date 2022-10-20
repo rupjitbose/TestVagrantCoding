@@ -26,6 +26,8 @@ Listener.java --> Contains testng listeners.
 
 src/test/java/tests:
 MovieDetailsTest.java --> contains the testcases for movie details checking 1.movieReleaseDateCheck 2.movieCountryCheck.
+Within the test you will find @DataProvider.Wehre you can change the movie name and run the test for differnt movie. For example do the below change to check for "K.G.F: Chapter 1"
+String movie="K.G.F: Chapter 1";
 
 run using testNG from IDE:
 1.Open project in IDE
