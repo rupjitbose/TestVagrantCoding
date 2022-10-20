@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-19T19:18:40Z" name="Suite" finished-at="2022-10-19T19:19:08Z" duration-ms="27335">
+  <suite started-at="2022-10-20T18:57:15Z" name="tests.MovieDetailsTest" finished-at="2022-10-20T18:57:49Z" duration-ms="33908">
     <groups>
     </groups>
-    <test started-at="2022-10-19T19:18:40Z" name="Test" finished-at="2022-10-19T19:19:08Z" duration-ms="27335">
+    <test started-at="2022-10-20T18:57:15Z" name="Command line test" finished-at="2022-10-20T18:57:49Z" duration-ms="33908">
       <class name="tests.MovieDetailsTest">
-        <test-method is-config="true" signature="launchImdbApplication()[pri:0, instance:tests.MovieDetailsTest@ab7395e]" started-at="2022-10-19T19:18:40Z" name="launchImdbApplication" finished-at="2022-10-19T19:18:46Z" duration-ms="5585" status="PASS">
+        <test-method is-config="true" signature="launchImdbApplication()[pri:0, instance:tests.MovieDetailsTest@1d371b2d]" started-at="2022-10-20T18:57:15Z" name="launchImdbApplication" finished-at="2022-10-20T18:57:23Z" duration-ms="8318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchImdbApplication -->
-        <test-method signature="movieCountryCheck(java.lang.String)[pri:0, instance:tests.MovieDetailsTest@ab7395e]" started-at="2022-10-19T19:18:46Z" name="movieCountryCheck" data-provider="getdata" finished-at="2022-10-19T19:18:54Z" duration-ms="8239" status="PASS">
+        <test-method signature="movieCountryCheck(java.lang.String)[pri:0, instance:tests.MovieDetailsTest@1d371b2d]" started-at="2022-10-20T18:57:23Z" name="movieCountryCheck" data-provider="getdata" finished-at="2022-10-20T18:57:34Z" duration-ms="10048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- movieCountryCheck -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.MovieDetailsTest@ab7395e]" started-at="2022-10-19T19:18:54Z" name="closeWindow" finished-at="2022-10-19T19:18:54Z" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.MovieDetailsTest@1d371b2d]" started-at="2022-10-20T18:57:34Z" name="closeWindow" finished-at="2022-10-20T18:57:34Z" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method is-config="true" signature="launchImdbApplication()[pri:0, instance:tests.MovieDetailsTest@ab7395e]" started-at="2022-10-19T19:18:54Z" name="launchImdbApplication" finished-at="2022-10-19T19:18:59Z" duration-ms="4785" status="PASS">
+        <test-method is-config="true" signature="launchImdbApplication()[pri:0, instance:tests.MovieDetailsTest@1d371b2d]" started-at="2022-10-20T18:57:34Z" name="launchImdbApplication" finished-at="2022-10-20T18:57:40Z" duration-ms="5938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchImdbApplication -->
-        <test-method signature="movieReleaseDateCheck(java.lang.String)[pri:0, instance:tests.MovieDetailsTest@ab7395e]" started-at="2022-10-19T19:18:59Z" name="movieReleaseDateCheck" data-provider="getdata" finished-at="2022-10-19T19:19:08Z" duration-ms="8457" status="PASS">
+        <test-method signature="movieReleaseDateCheck(java.lang.String)[pri:0, instance:tests.MovieDetailsTest@1d371b2d]" started-at="2022-10-20T18:57:40Z" name="movieReleaseDateCheck" data-provider="getdata" finished-at="2022-10-20T18:57:49Z" duration-ms="9342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- movieReleaseDateCheck -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.MovieDetailsTest@ab7395e]" started-at="2022-10-19T19:19:08Z" name="closeWindow" finished-at="2022-10-19T19:19:08Z" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:tests.MovieDetailsTest@1d371b2d]" started-at="2022-10-20T18:57:49Z" name="closeWindow" finished-at="2022-10-20T18:57:49Z" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
       </class> <!-- tests.MovieDetailsTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Command line test -->
+  </suite> <!-- tests.MovieDetailsTest -->
 </testng-results>
