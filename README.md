@@ -6,6 +6,7 @@ Once maven setup is done do the following steps to run the tests:
 3.Enter command :  mvn clean
 4.Enter command :  mvn compile
 5.Enter command :  mvn test -PMovie
+6.Enter command :  mvn test -PMovie -Dbrowser=<browser name>    //edge or chrome or firefox// this command will run the tests in browser of your choice.
 This will trigger the tests and once tests are completed a report will be generated in "reports" folder within your project. 
 The suite is designed in such a way if there is any unexpected failure of any testcase that testcase will run one additional time to make sure that the failure or the issue was a temporary issue or it is a proper failure. In case of testcase failure a screenshot will be attached to the generated report 
 
