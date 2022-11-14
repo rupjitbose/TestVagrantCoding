@@ -17,8 +17,8 @@
     <junit.version>3.8.1</junit.version>
     <selenium.version>3.141.59</selenium.version>
     <extentreports.version>5.0.9</extentreports.version>
-    <webdrivermanager.version>5.3.0</webdrivermanager.version>
-    <lombok.version>1.18.22</lombok.version>
+    <webdrivermanager.version>5.3.1</webdrivermanager.version>
+
     
     
   </properties>
@@ -62,11 +62,7 @@
     <version>${webdrivermanager.version}</version>
 	</dependency>
 
-	<dependency>
-  	<groupId>org.projectlombok</groupId>
-  	<artifactId>lombok</artifactId>
-  	<version>${lombok.version}</version>
-	</dependency>
+
 
 
 

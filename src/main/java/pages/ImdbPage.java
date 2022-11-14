@@ -29,12 +29,15 @@ public class ImdbPage extends Reuse{
 	
 	@FindBy(id="suggestion-search")
 	WebElement imdbSearch;
-	@FindBy(xpath="//span[text()='Country of origin']/parent::li")
+	@FindBy(xpath="//li[@data-testid='title-details-origin']")
 	WebElement imdbMovieDetails;
 	@FindBy(xpath="//a[text()='Release date']/following-sibling::div//a")
 	WebElement imdbReleaseDate;
-	@FindBy(xpath="//span[text()='Country of origin']/following-sibling::div//a")
+	@FindBy(xpath = "//a[contains(@href, 'country')]")
 	WebElement imdbCountry;
+
+
+
 	
 	public void goToImdb() throws IOException {
 		//driver.get("https://www.imdb.com/");
